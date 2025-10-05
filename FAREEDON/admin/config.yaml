@@ -1,0 +1,29 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "settings"
+    label: "إعدادات الموقع"
+    files:
+      - name: "game"
+        label: "معلومات اللعبة"
+        file: "content/game.json"
+        fields:
+          - {label: "اسم اللعبة بالعربي", name: "name_ar", widget: "string", default: "برميل"}
+          - {label: "اسم اللعبة بالإنجليزي", name: "name_en", widget: "string", default: "Bermel"}
+          - {label: "الوصف", name: "description", widget: "text"}
+          - {label: "رابط التحميل", name: "download_link", widget: "string"}
+          - {label: "حجم اللعبة", name: "game_size", widget: "string", default: "200 MB"}
+          
+  - name: "gallery"
+    label: "معرض الصور"
+    folder: "content/gallery"
+    create: true
+    fields:
+      - {label: "العنوان", name: "title", widget: "string"}
+      - {label: "الصورة", name: "image", widget: "image"}
+      - {label: "الترتيب", name: "order", widget: "number", default: 1}
