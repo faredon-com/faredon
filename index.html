@@ -50,12 +50,13 @@
         .logo img {
             height: 50px;
             width: auto;
-            filter: drop-shadow(0 0 15px rgba(52, 152, 219, 0.6));
+            filter: drop-shadow(0 0 15px rgba(52, 152, 219, 0.6)) drop-shadow(0 0 10px rgba(201, 160, 99, 0.4));
             transition: transform 0.3s ease;
         }
 
         .logo img:hover {
             transform: scale(1.1);
+            filter: drop-shadow(0 0 20px rgba(52, 152, 219, 0.8)) drop-shadow(0 0 15px rgba(201, 160, 99, 0.6));
         }
 
         nav {
@@ -100,7 +101,8 @@
             justify-content: center;
             text-align: center;
             padding: 8rem 2rem 4rem;
-            background: radial-gradient(circle at center, rgba(52, 152, 219, 0.15) 0%, transparent 70%);
+            background: radial-gradient(circle at 50% 30%, rgba(52, 152, 219, 0.2) 0%, transparent 50%),
+                        radial-gradient(circle at 50% 80%, rgba(201, 160, 99, 0.15) 0%, transparent 60%);
             position: relative;
             overflow: hidden;
         }
@@ -110,7 +112,7 @@
             position: absolute;
             width: 600px;
             height: 600px;
-            background: radial-gradient(circle, rgba(41, 128, 185, 0.3) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(52, 152, 219, 0.25) 0%, rgba(201, 160, 99, 0.15) 50%, transparent 70%);
             border-radius: 50%;
             top: 50%;
             left: 50%;
@@ -138,24 +140,28 @@
         .hero h1 {
             font-size: 5.5rem;
             margin-bottom: 1rem;
-            background: linear-gradient(135deg, #3498db 0%, #5dade2 50%, #85c1e9 100%);
+            background: linear-gradient(135deg, #3498db 0%, #5dade2 30%, #d4a574 70%, #c9a063 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            filter: drop-shadow(0 0 40px rgba(52, 152, 219, 0.7));
+            filter: drop-shadow(0 0 40px rgba(52, 152, 219, 0.5)) drop-shadow(0 0 20px rgba(201, 160, 99, 0.3));
             animation: shimmer 4s ease-in-out infinite;
             font-weight: 900;
             letter-spacing: 2px;
         }
 
         @keyframes shimmer {
-            0%, 100% { filter: drop-shadow(0 0 40px rgba(52, 152, 219, 0.7)) brightness(1); }
-            50% { filter: drop-shadow(0 0 60px rgba(52, 152, 219, 0.9)) brightness(1.2); }
+            0%, 100% { 
+                filter: drop-shadow(0 0 40px rgba(52, 152, 219, 0.5)) drop-shadow(0 0 20px rgba(201, 160, 99, 0.3)) brightness(1); 
+            }
+            50% { 
+                filter: drop-shadow(0 0 60px rgba(52, 152, 219, 0.7)) drop-shadow(0 0 30px rgba(201, 160, 99, 0.5)) brightness(1.2); 
+            }
         }
 
         .hero .subtitle {
             font-size: 1.8rem;
-            color: #85c1e9;
+            color: #d4a574;
             margin-bottom: 1rem;
             font-weight: 400;
             letter-spacing: 3px;
@@ -163,15 +169,16 @@
 
         .hero .tagline {
             font-size: 1.3rem;
-            color: #7fb3d5;
+            color: #a8c5d8;
             margin-bottom: 2rem;
             font-style: italic;
             font-weight: 300;
         }
 
         .release-info {
-            background: linear-gradient(135deg, rgba(52, 152, 219, 0.2) 0%, rgba(41, 128, 185, 0.1) 100%);
-            border: 2px solid #3498db;
+            background: linear-gradient(135deg, rgba(52, 152, 219, 0.2) 0%, rgba(201, 160, 99, 0.15) 100%);
+            border: 2px solid;
+            border-image: linear-gradient(135deg, #3498db 0%, #d4a574 100%) 1;
             border-radius: 15px;
             padding: 1.5rem 2rem;
             margin: 2rem auto;
@@ -180,7 +187,7 @@
         }
 
         .release-info h3 {
-            color: #3498db;
+            color: #5dade2;
             font-size: 1.4rem;
             margin-bottom: 0.8rem;
             font-weight: 700;
@@ -195,7 +202,7 @@
         .release-date {
             font-size: 2rem !important;
             font-weight: 700;
-            background: linear-gradient(135deg, #3498db, #85c1e9);
+            background: linear-gradient(135deg, #3498db 0%, #d4a574 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -229,18 +236,18 @@
         }
 
         .download-btn {
-            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
-            box-shadow: 0 10px 30px rgba(52, 152, 219, 0.5);
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 50%, #c9a063 100%);
+            box-shadow: 0 10px 30px rgba(52, 152, 219, 0.4), 0 5px 15px rgba(201, 160, 99, 0.3);
         }
 
         .steam-btn {
-            background: linear-gradient(135deg, #1a5490 0%, #134a80 100%);
-            box-shadow: 0 10px 30px rgba(26, 84, 144, 0.5);
+            background: linear-gradient(135deg, #1a5490 0%, #2874a6 50%, #8b7355 100%);
+            box-shadow: 0 10px 30px rgba(26, 84, 144, 0.4), 0 5px 15px rgba(139, 115, 85, 0.3);
         }
 
         .download-btn:hover, .steam-btn:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(52, 152, 219, 0.7);
+            box-shadow: 0 15px 40px rgba(52, 152, 219, 0.6), 0 8px 20px rgba(201, 160, 99, 0.4);
         }
 
         .download-btn::before, .steam-btn::before {
@@ -269,7 +276,7 @@
             font-size: 3.5rem;
             text-align: center;
             margin-bottom: 4rem;
-            background: linear-gradient(135deg, #3498db, #5dade2);
+            background: linear-gradient(135deg, #3498db 0%, #5dade2 40%, #d4a574 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -286,7 +293,7 @@
             transform: translateX(-50%);
             width: 100px;
             height: 4px;
-            background: linear-gradient(90deg, transparent, #3498db, transparent);
+            background: linear-gradient(90deg, transparent, #3498db 30%, #d4a574 70%, transparent);
             border-radius: 2px;
         }
 
@@ -298,7 +305,7 @@
         }
 
         .info-card {
-            background: linear-gradient(135deg, rgba(52, 152, 219, 0.15) 0%, rgba(41, 128, 185, 0.08) 100%);
+            background: linear-gradient(135deg, rgba(52, 152, 219, 0.15) 0%, rgba(201, 160, 99, 0.1) 100%);
             padding: 2.5rem;
             border-radius: 20px;
             border: 2px solid rgba(52, 152, 219, 0.3);
@@ -308,13 +315,13 @@
 
         .info-card:hover {
             transform: translateY(-10px);
-            border-color: #3498db;
-            box-shadow: 0 15px 40px rgba(52, 152, 219, 0.4);
-            background: linear-gradient(135deg, rgba(52, 152, 219, 0.25) 0%, rgba(41, 128, 185, 0.15) 100%);
+            border-color: #d4a574;
+            box-shadow: 0 15px 40px rgba(52, 152, 219, 0.3), 0 10px 30px rgba(201, 160, 99, 0.2);
+            background: linear-gradient(135deg, rgba(52, 152, 219, 0.25) 0%, rgba(201, 160, 99, 0.18) 100%);
         }
 
         .info-card h3 {
-            color: #3498db;
+            color: #5dade2;
             font-size: 1.8rem;
             margin-bottom: 1.2rem;
             font-weight: 700;
@@ -329,7 +336,7 @@
         /* Gallery Section */
         .gallery {
             padding: 6rem 2rem;
-            background: linear-gradient(180deg, rgba(15, 32, 39, 0.8) 0%, rgba(32, 58, 67, 0.8) 100%);
+            background: linear-gradient(180deg, rgba(30, 60, 114, 0.6) 0%, rgba(139, 115, 85, 0.5) 100%);
             backdrop-filter: blur(5px);
         }
 
@@ -346,15 +353,16 @@
             aspect-ratio: 16/9;
             border-radius: 20px;
             overflow: hidden;
-            border: 3px solid rgba(52, 152, 219, 0.4);
+            border: 3px solid;
+            border-image: linear-gradient(135deg, rgba(52, 152, 219, 0.5) 0%, rgba(201, 160, 99, 0.5) 100%) 1;
             transition: all 0.4s ease;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
         }
 
         .gallery-item:hover {
-            border-color: #3498db;
+            border-image: linear-gradient(135deg, #3498db 0%, #d4a574 100%) 1;
             transform: scale(1.05) translateY(-5px);
-            box-shadow: 0 20px 50px rgba(52, 152, 219, 0.6);
+            box-shadow: 0 20px 50px rgba(52, 152, 219, 0.4), 0 15px 35px rgba(201, 160, 99, 0.3);
         }
 
         .gallery-item img {
@@ -370,11 +378,12 @@
 
         /* Footer */
         footer {
-            background: rgba(15, 32, 39, 0.95);
+            background: linear-gradient(135deg, rgba(30, 60, 114, 0.95) 0%, rgba(139, 115, 85, 0.95) 100%);
             padding: 3.5rem 2rem;
             text-align: center;
-            border-top: 3px solid #3498db;
-            box-shadow: 0 -5px 25px rgba(52, 152, 219, 0.3);
+            border-top: 3px solid;
+            border-image: linear-gradient(90deg, #3498db 0%, #d4a574 100%) 1;
+            box-shadow: 0 -5px 25px rgba(52, 152, 219, 0.2), 0 -3px 15px rgba(201, 160, 99, 0.2);
         }
 
         .footer-content {
@@ -385,7 +394,7 @@
         .footer-logo {
             font-size: 1.8rem;
             font-weight: bold;
-            background: linear-gradient(135deg, #3498db, #5dade2);
+            background: linear-gradient(135deg, #3498db 0%, #d4a574 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
