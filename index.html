@@ -241,10 +241,9 @@
             transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
-            cursor: not-allowed;
+            cursor: pointer;
             background: linear-gradient(135deg, #1a5490 0%, #2874a6 50%, #8b7355 100%);
             box-shadow: 0 10px 30px rgba(26, 84, 144, 0.4), 0 5px 15px rgba(139, 115, 85, 0.3);
-            opacity: 0.8;
         }
 
         .steam-btn::before {
@@ -256,6 +255,20 @@
             height: 100%;
             background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
             transition: 0.6s;
+        }
+
+        .steam-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(52, 152, 219, 0.5), 0 10px 25px rgba(201, 160, 99, 0.4);
+            background: linear-gradient(135deg, #2874a6 0%, #3498db 50%, #d4a574 100%);
+        }
+
+        .steam-btn:hover::before {
+            left: 100%;
+        }
+
+        .steam-btn:active {
+            transform: translateY(-1px);
         }
 
         /* Game Info Section */
@@ -483,15 +496,15 @@
             <p class="tagline">تحدى نفسك... هل تستطيع الوصول للقمة؟</p>
             
             <div class="release-info">
-                <h3>🎮 قريباً على Steam</h3>
+                <h3>🎮 متاحة الآن على Steam</h3>
                 <p class="release-date">11 نوفمبر 2025</p>
                 <p>تاريخ الإصدار الرسمي</p>
             </div>
 
             <div class="button-group">
-                <a class="steam-btn">
-                    <span>🎮</span>
-                    <span>قريباً على Steam</span>
+                <a href="https://store.steampowered.com/app/4134800/Bermel/" target="_blank" class="steam-btn">
+                    <span>❤️</span>
+                    <span>أضف إلى قائمة الأمنيات</span>
                 </a>
             </div>
         </div>
@@ -552,9 +565,9 @@
             </div>
 
             <div class="button-group" style="margin-top: 3rem;">
-                <a class="steam-btn">
-                    <span>🎮</span>
-                    <span>قريباً على Steam</span>
+                <a href="https://store.steampowered.com/app/4134800/Bermel/" target="_blank" class="steam-btn">
+                    <span>❤️</span>
+                    <span>أضف إلى قائمة الأمنيات</span>
                 </a>
             </div>
 
