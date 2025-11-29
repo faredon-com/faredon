@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="ar" dir="rtl">
 <head>
     <!-- Google tag (gtag.js) -->
@@ -9,468 +10,471 @@
       gtag('js', new Date());
       gtag('config', 'G-E52Y3F23L4');
     </script>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>برميل - Bermel | FaredON Games</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #000000;
-            color: #e8f4f8;
-            overflow-x: hidden;
-            line-height: 1.6;
-        }
+```
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>برميل - Bermel | FaredON Games</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-        /* Header */
-        header {
-            background: linear-gradient(135deg, rgba(30, 60, 114, 0.95) 0%, rgba(42, 82, 152, 0.95) 50%, rgba(139, 115, 85, 0.95) 100%);
-            backdrop-filter: blur(15px);
-            padding: 1.2rem 2rem;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            border-bottom: 3px solid #d4a574;
-            box-shadow: 0 5px 25px rgba(201, 160, 99, 0.4);
-            transition: all 0.3s ease;
-        }
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #000000;
+        color: #e8f4f8;
+        overflow-x: hidden;
+        line-height: 1.6;
+    }
 
-        .header-content {
-            max-width: 1400px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+    /* Header */
+    header {
+        background: linear-gradient(135deg, rgba(30, 60, 114, 0.95) 0%, rgba(42, 82, 152, 0.95) 50%, rgba(139, 115, 85, 0.95) 100%);
+        backdrop-filter: blur(15px);
+        padding: 1.2rem 2rem;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        border-bottom: 3px solid #d4a574;
+        box-shadow: 0 5px 25px rgba(201, 160, 99, 0.4);
+        transition: all 0.3s ease;
+    }
 
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
+    .header-content {
+        max-width: 1400px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-        .logo img {
-            height: 50px;
-            width: auto;
-            filter: drop-shadow(0 0 15px rgba(52, 152, 219, 0.6)) drop-shadow(0 0 10px rgba(201, 160, 99, 0.4));
-            transition: transform 0.3s ease;
-        }
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
 
-        .logo img:hover {
-            transform: scale(1.1);
-            filter: drop-shadow(0 0 20px rgba(52, 152, 219, 0.8)) drop-shadow(0 0 15px rgba(201, 160, 99, 0.6));
-        }
+    .logo img {
+        height: 50px;
+        width: auto;
+        filter: drop-shadow(0 0 15px rgba(52, 152, 219, 0.6)) drop-shadow(0 0 10px rgba(201, 160, 99, 0.4));
+        transition: transform 0.3s ease;
+    }
 
-        nav {
-            display: flex;
-            gap: 2rem;
-        }
+    .logo img:hover {
+        transform: scale(1.1);
+        filter: drop-shadow(0 0 20px rgba(52, 152, 219, 0.8)) drop-shadow(0 0 15px rgba(201, 160, 99, 0.6));
+    }
 
-        nav a {
-            color: #b8d4e3;
-            text-decoration: none;
-            transition: all 0.3s;
-            font-weight: 600;
-            font-size: 1.05rem;
-            position: relative;
-            padding: 0.5rem 0;
-        }
+    nav {
+        display: flex;
+        gap: 2rem;
+    }
 
-        nav a::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: linear-gradient(90deg, #3498db, #d4a574);
-            transition: width 0.3s ease;
-        }
+    nav a {
+        color: #b8d4e3;
+        text-decoration: none;
+        transition: all 0.3s;
+        font-weight: 600;
+        font-size: 1.05rem;
+        position: relative;
+        padding: 0.5rem 0;
+    }
 
-        nav a:hover {
-            color: #d4a574;
-        }
+    nav a::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: linear-gradient(90deg, #3498db, #d4a574);
+        transition: width 0.3s ease;
+    }
 
-        nav a:hover::after {
-            width: 100%;
-        }
+    nav a:hover {
+        color: #d4a574;
+    }
 
-        /* Hero Section */
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 8rem 2rem 4rem;
-            background: radial-gradient(circle at 50% 30%, rgba(52, 152, 219, 0.2) 0%, transparent 50%),
-                        radial-gradient(circle at 50% 80%, rgba(201, 160, 99, 0.15) 0%, transparent 60%);
-            position: relative;
-            overflow: hidden;
-        }
+    nav a:hover::after {
+        width: 100%;
+    }
 
-        .hero::before {
-            content: '';
-            position: absolute;
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, rgba(52, 152, 219, 0.25) 0%, rgba(201, 160, 99, 0.15) 50%, transparent 70%);
-            border-radius: 50%;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            animation: pulse 5s ease-in-out infinite;
-        }
+    /* Hero Section */
+    .hero {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 8rem 2rem 4rem;
+        background: radial-gradient(circle at 50% 30%, rgba(52, 152, 219, 0.2) 0%, transparent 50%),
+                    radial-gradient(circle at 50% 80%, rgba(201, 160, 99, 0.15) 0%, transparent 60%);
+        position: relative;
+        overflow: hidden;
+    }
 
-        @keyframes pulse {
-            0%, 100% { 
-                transform: translate(-50%, -50%) scale(1); 
-                opacity: 0.6; 
-            }
-            50% { 
-                transform: translate(-50%, -50%) scale(1.3); 
-                opacity: 0.3; 
-            }
-        }
+    .hero::before {
+        content: '';
+        position: absolute;
+        width: 600px;
+        height: 600px;
+        background: radial-gradient(circle, rgba(52, 152, 219, 0.25) 0%, rgba(201, 160, 99, 0.15) 50%, transparent 70%);
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: pulse 5s ease-in-out infinite;
+    }
 
-        .hero-content {
-            position: relative;
-            z-index: 1;
-            max-width: 900px;
+    @keyframes pulse {
+        0%, 100% { 
+            transform: translate(-50%, -50%) scale(1); 
+            opacity: 0.6; 
         }
+        50% { 
+            transform: translate(-50%, -50%) scale(1.3); 
+            opacity: 0.3; 
+        }
+    }
 
+    .hero-content {
+        position: relative;
+        z-index: 1;
+        max-width: 900px;
+    }
+
+    .hero h1 {
+        font-size: 5.5rem;
+        margin-bottom: 1rem;
+        background: linear-gradient(135deg, #3498db 0%, #5dade2 30%, #d4a574 70%, #c9a063 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        filter: drop-shadow(0 0 40px rgba(52, 152, 219, 0.5)) drop-shadow(0 0 20px rgba(201, 160, 99, 0.3));
+        animation: shimmer 4s ease-in-out infinite;
+        font-weight: 900;
+        letter-spacing: 2px;
+    }
+
+    @keyframes shimmer {
+        0%, 100% { 
+            filter: drop-shadow(0 0 40px rgba(52, 152, 219, 0.5)) drop-shadow(0 0 20px rgba(201, 160, 99, 0.3)) brightness(1); 
+        }
+        50% { 
+            filter: drop-shadow(0 0 60px rgba(52, 152, 219, 0.7)) drop-shadow(0 0 30px rgba(201, 160, 99, 0.5)) brightness(1.2); 
+        }
+    }
+
+    .hero .subtitle {
+        font-size: 1.8rem;
+        color: #d4a574;
+        margin-bottom: 1rem;
+        font-weight: 400;
+        letter-spacing: 3px;
+    }
+
+    .hero .tagline {
+        font-size: 1.3rem;
+        color: #a8c5d8;
+        margin-bottom: 2rem;
+        font-style: italic;
+        font-weight: 300;
+    }
+
+    .release-info {
+        background: linear-gradient(135deg, rgba(52, 152, 219, 0.2) 0%, rgba(201, 160, 99, 0.15) 100%);
+        border: 2px solid;
+        border-image: linear-gradient(135deg, #3498db 0%, #d4a574 100%) 1;
+        border-radius: 15px;
+        padding: 1.5rem 2rem;
+        margin: 2rem auto;
+        max-width: 500px;
+        backdrop-filter: blur(10px);
+    }
+
+    .release-info h3 {
+        color: #5dade2;
+        font-size: 1.4rem;
+        margin-bottom: 0.8rem;
+        font-weight: 700;
+    }
+
+    .release-info p {
+        color: #b8d4e3;
+        font-size: 1.1rem;
+        margin: 0.5rem 0;
+    }
+
+    .release-date {
+        font-size: 2rem !important;
+        font-weight: 700;
+        background: linear-gradient(135deg, #3498db 0%, #d4a574 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin: 1rem 0 !important;
+    }
+
+    /* Steam Button */
+    .button-group {
+        display: flex;
+        gap: 1.5rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 2.5rem;
+    }
+
+    .steam-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.8rem;
+        padding: 1.3rem 3rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #fff;
+        border: none;
+        border-radius: 50px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        background: linear-gradient(135deg, #1a5490 0%, #2874a6 50%, #8b7355 100%);
+        box-shadow: 0 10px 30px rgba(26, 84, 144, 0.4), 0 5px 15px rgba(139, 115, 85, 0.3);
+    }
+
+    .steam-btn::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+        transition: 0.6s;
+    }
+
+    .steam-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 15px 40px rgba(52, 152, 219, 0.5), 0 10px 25px rgba(201, 160, 99, 0.4);
+        background: linear-gradient(135deg, #2874a6 0%, #3498db 50%, #d4a574 100%);
+    }
+
+    .steam-btn:hover::before {
+        left: 100%;
+    }
+
+    .steam-btn:active {
+        transform: translateY(-1px);
+    }
+
+    /* Game Info Section */
+    .game-info {
+        padding: 5rem 2rem;
+        background: linear-gradient(180deg, transparent 0%, rgba(52, 152, 219, 0.05) 50%, transparent 100%);
+    }
+
+    .section-title {
+        text-align: center;
+        font-size: 3.5rem;
+        margin-bottom: 3rem;
+        background: linear-gradient(135deg, #3498db 0%, #d4a574 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-weight: 900;
+    }
+
+    .info-grid {
+        max-width: 1400px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 2.5rem;
+    }
+
+    .info-card {
+        background: linear-gradient(135deg, rgba(52, 152, 219, 0.1) 0%, rgba(201, 160, 99, 0.05) 100%);
+        padding: 2.5rem;
+        border-radius: 20px;
+        border: 2px solid;
+        border-image: linear-gradient(135deg, rgba(52, 152, 219, 0.3) 0%, rgba(201, 160, 99, 0.3) 100%) 1;
+        transition: all 0.4s ease;
+        backdrop-filter: blur(5px);
+    }
+
+    .info-card:hover {
+        transform: translateY(-10px);
+        border-image: linear-gradient(135deg, #3498db 0%, #d4a574 100%) 1;
+        box-shadow: 0 20px 50px rgba(52, 152, 219, 0.3), 0 15px 35px rgba(201, 160, 99, 0.2);
+    }
+
+    .info-card h3 {
+        color: #5dade2;
+        font-size: 1.8rem;
+        margin-bottom: 1.2rem;
+        font-weight: 700;
+    }
+
+    .info-card p {
+        color: #b8d4e3;
+        font-size: 1.15rem;
+        line-height: 1.8;
+    }
+
+    /* Gallery Section */
+    .gallery {
+        padding: 5rem 2rem;
+        background: linear-gradient(180deg, rgba(201, 160, 99, 0.05) 0%, transparent 50%, rgba(52, 152, 219, 0.05) 100%);
+    }
+
+    .gallery-grid {
+        max-width: 1400px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 2.5rem;
+    }
+
+    .gallery-item {
+        position: relative;
+        aspect-ratio: 16/9;
+        border-radius: 20px;
+        overflow: hidden;
+        border: 3px solid;
+        border-image: linear-gradient(135deg, rgba(52, 152, 219, 0.5) 0%, rgba(201, 160, 99, 0.5) 100%) 1;
+        transition: all 0.4s ease;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .gallery-item:hover {
+        border-image: linear-gradient(135deg, #3498db 0%, #d4a574 100%) 1;
+        transform: scale(1.05) translateY(-5px);
+        box-shadow: 0 20px 50px rgba(52, 152, 219, 0.4), 0 15px 35px rgba(201, 160, 99, 0.3);
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.4s ease;
+    }
+
+    .gallery-item:hover img {
+        transform: scale(1.1);
+    }
+
+    /* Footer */
+    footer {
+        background: linear-gradient(135deg, rgba(30, 60, 114, 0.95) 0%, rgba(139, 115, 85, 0.95) 100%);
+        padding: 3.5rem 2rem;
+        text-align: center;
+        border-top: 3px solid;
+        border-image: linear-gradient(90deg, #3498db 0%, #d4a574 100%) 1;
+        box-shadow: 0 -5px 25px rgba(52, 152, 219, 0.2), 0 -3px 15px rgba(201, 160, 99, 0.2);
+    }
+
+    .footer-content {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .footer-logo {
+        font-size: 1.8rem;
+        font-weight: bold;
+        background: linear-gradient(135deg, #3498db 0%, #d4a574 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 1.5rem;
+    }
+
+    footer p {
+        color: #7fb3d5;
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+
+    .social-links {
+        margin-top: 2rem;
+        display: flex;
+        gap: 1.5rem;
+        justify-content: center;
+    }
+
+    .social-links a {
+        color: #3498db;
+        font-size: 1.5rem;
+        transition: all 0.3s;
+    }
+
+    .social-links a:hover {
+        color: #5dade2;
+        transform: scale(1.2);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
         .hero h1 {
-            font-size: 5.5rem;
-            margin-bottom: 1rem;
-            background: linear-gradient(135deg, #3498db 0%, #5dade2 30%, #d4a574 70%, #c9a063 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            filter: drop-shadow(0 0 40px rgba(52, 152, 219, 0.5)) drop-shadow(0 0 20px rgba(201, 160, 99, 0.3));
-            animation: shimmer 4s ease-in-out infinite;
-            font-weight: 900;
-            letter-spacing: 2px;
+            font-size: 3.5rem;
         }
-
-        @keyframes shimmer {
-            0%, 100% { 
-                filter: drop-shadow(0 0 40px rgba(52, 152, 219, 0.5)) drop-shadow(0 0 20px rgba(201, 160, 99, 0.3)) brightness(1); 
-            }
-            50% { 
-                filter: drop-shadow(0 0 60px rgba(52, 152, 219, 0.7)) drop-shadow(0 0 30px rgba(201, 160, 99, 0.5)) brightness(1.2); 
-            }
-        }
-
+        
         .hero .subtitle {
-            font-size: 1.8rem;
-            color: #d4a574;
-            margin-bottom: 1rem;
-            font-weight: 400;
-            letter-spacing: 3px;
-        }
-
-        .hero .tagline {
-            font-size: 1.3rem;
-            color: #a8c5d8;
-            margin-bottom: 2rem;
-            font-style: italic;
-            font-weight: 300;
-        }
-
-        .release-info {
-            background: linear-gradient(135deg, rgba(52, 152, 219, 0.2) 0%, rgba(201, 160, 99, 0.15) 100%);
-            border: 2px solid;
-            border-image: linear-gradient(135deg, #3498db 0%, #d4a574 100%) 1;
-            border-radius: 15px;
-            padding: 1.5rem 2rem;
-            margin: 2rem auto;
-            max-width: 500px;
-            backdrop-filter: blur(10px);
-        }
-
-        .release-info h3 {
-            color: #5dade2;
             font-size: 1.4rem;
-            margin-bottom: 0.8rem;
-            font-weight: 700;
-        }
-
-        .release-info p {
-            color: #b8d4e3;
-            font-size: 1.1rem;
-            margin: 0.5rem 0;
-        }
-
-        .release-date {
-            font-size: 2rem !important;
-            font-weight: 700;
-            background: linear-gradient(135deg, #3498db 0%, #d4a574 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin: 1rem 0 !important;
-        }
-
-        /* Steam Button */
-        .button-group {
-            display: flex;
-            gap: 1.5rem;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 2.5rem;
         }
 
         .steam-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.8rem;
-            padding: 1.3rem 3rem;
-            font-size: 1.2rem;
-            font-weight: bold;
-            color: #fff;
-            border: none;
-            border-radius: 50px;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-            cursor: pointer;
-            background: linear-gradient(135deg, #1a5490 0%, #2874a6 50%, #8b7355 100%);
-            box-shadow: 0 10px 30px rgba(26, 84, 144, 0.4), 0 5px 15px rgba(139, 115, 85, 0.3);
-        }
-
-        .steam-btn::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-            transition: 0.6s;
-        }
-
-        .steam-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(52, 152, 219, 0.5), 0 10px 25px rgba(201, 160, 99, 0.4);
-            background: linear-gradient(135deg, #2874a6 0%, #3498db 50%, #d4a574 100%);
-        }
-
-        .steam-btn:hover::before {
-            left: 100%;
-        }
-
-        .steam-btn:active {
-            transform: translateY(-1px);
-        }
-
-        /* Game Info Section */
-        .game-info {
-            padding: 5rem 2rem;
-            background: linear-gradient(180deg, transparent 0%, rgba(52, 152, 219, 0.05) 50%, transparent 100%);
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 3.5rem;
-            margin-bottom: 3rem;
-            background: linear-gradient(135deg, #3498db 0%, #d4a574 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            font-weight: 900;
-        }
-
-        .info-grid {
-            max-width: 1400px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2.5rem;
-        }
-
-        .info-card {
-            background: linear-gradient(135deg, rgba(52, 152, 219, 0.1) 0%, rgba(201, 160, 99, 0.05) 100%);
-            padding: 2.5rem;
-            border-radius: 20px;
-            border: 2px solid;
-            border-image: linear-gradient(135deg, rgba(52, 152, 219, 0.3) 0%, rgba(201, 160, 99, 0.3) 100%) 1;
-            transition: all 0.4s ease;
-            backdrop-filter: blur(5px);
-        }
-
-        .info-card:hover {
-            transform: translateY(-10px);
-            border-image: linear-gradient(135deg, #3498db 0%, #d4a574 100%) 1;
-            box-shadow: 0 20px 50px rgba(52, 152, 219, 0.3), 0 15px 35px rgba(201, 160, 99, 0.2);
-        }
-
-        .info-card h3 {
-            color: #5dade2;
-            font-size: 1.8rem;
-            margin-bottom: 1.2rem;
-            font-weight: 700;
-        }
-
-        .info-card p {
-            color: #b8d4e3;
-            font-size: 1.15rem;
-            line-height: 1.8;
-        }
-
-        /* Gallery Section */
-        .gallery {
-            padding: 5rem 2rem;
-            background: linear-gradient(180deg, rgba(201, 160, 99, 0.05) 0%, transparent 50%, rgba(52, 152, 219, 0.05) 100%);
-        }
-
-        .gallery-grid {
-            max-width: 1400px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 2.5rem;
-        }
-
-        .gallery-item {
-            position: relative;
-            aspect-ratio: 16/9;
-            border-radius: 20px;
-            overflow: hidden;
-            border: 3px solid;
-            border-image: linear-gradient(135deg, rgba(52, 152, 219, 0.5) 0%, rgba(201, 160, 99, 0.5) 100%) 1;
-            transition: all 0.4s ease;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-        }
-
-        .gallery-item:hover {
-            border-image: linear-gradient(135deg, #3498db 0%, #d4a574 100%) 1;
-            transform: scale(1.05) translateY(-5px);
-            box-shadow: 0 20px 50px rgba(52, 152, 219, 0.4), 0 15px 35px rgba(201, 160, 99, 0.3);
-        }
-
-        .gallery-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.4s ease;
-        }
-
-        .gallery-item:hover img {
-            transform: scale(1.1);
-        }
-
-        /* Footer */
-        footer {
-            background: linear-gradient(135deg, rgba(30, 60, 114, 0.95) 0%, rgba(139, 115, 85, 0.95) 100%);
-            padding: 3.5rem 2rem;
-            text-align: center;
-            border-top: 3px solid;
-            border-image: linear-gradient(90deg, #3498db 0%, #d4a574 100%) 1;
-            box-shadow: 0 -5px 25px rgba(52, 152, 219, 0.2), 0 -3px 15px rgba(201, 160, 99, 0.2);
-        }
-
-        .footer-content {
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .footer-logo {
-            font-size: 1.8rem;
-            font-weight: bold;
-            background: linear-gradient(135deg, #3498db 0%, #d4a574 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 1.5rem;
-        }
-
-        footer p {
-            color: #7fb3d5;
-            margin-top: 1rem;
+            padding: 1rem 2rem;
             font-size: 1rem;
         }
 
-        .social-links {
-            margin-top: 2rem;
-            display: flex;
-            gap: 1.5rem;
-            justify-content: center;
+        .button-group {
+            flex-direction: column;
+            align-items: center;
         }
 
-        .social-links a {
-            color: #3498db;
-            font-size: 1.5rem;
-            transition: all 0.3s;
+        .section-title {
+            font-size: 2.5rem;
         }
 
-        .social-links a:hover {
-            color: #5dade2;
-            transform: scale(1.2);
+        .logo img {
+            height: 40px;
         }
 
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 3.5rem;
-            }
-            
-            .hero .subtitle {
-                font-size: 1.4rem;
-            }
-
-            .steam-btn {
-                padding: 1rem 2rem;
-                font-size: 1rem;
-            }
-
-            .button-group {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .section-title {
-                font-size: 2.5rem;
-            }
-
-            .logo img {
-                height: 40px;
-            }
-
-            nav {
-                gap: 1rem;
-            }
-
-            nav a {
-                font-size: 0.9rem;
-            }
-
-            .info-grid, .gallery-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .release-date {
-                font-size: 1.5rem !important;
-            }
+        nav {
+            gap: 1rem;
         }
 
-        /* Smooth Scrolling */
-        html {
-            scroll-behavior: smooth;
+        nav a {
+            font-size: 0.9rem;
         }
 
-        /* Loading Optimization */
-        img {
-            loading: lazy;
+        .info-grid, .gallery-grid {
+            grid-template-columns: 1fr;
         }
-    </style>
+
+        .release-date {
+            font-size: 1.5rem !important;
+        }
+    }
+
+    /* Smooth Scrolling */
+    html {
+        scroll-behavior: smooth;
+    }
+
+    /* Loading Optimization */
+    img {
+        loading: lazy;
+    }
+</style>
+```
+
 </head>
 <body>
     <!-- Header -->
@@ -488,103 +492,107 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>برميل</h1>
-            <p class="subtitle">BERMEL</p>
-            <p class="tagline">تحدى نفسك... هل تستطيع الوصول للقمة؟</p>
-            
-            <div class="release-info">
-                <h3>🎮 متاحة الآن على Steam</h3>
-                <p class="release-date">29 نوفمبر 2025</p>
-                <p>تاريخ الإصدار الرسمي</p>
-            </div>
-
-            <div class="button-group">
-                <a href="https://store.steampowered.com/app/4134800/Bermel/" target="_blank" class="steam-btn">
-                    <span>❤️</span>
-                    <span>أضف إلى قائمة الأمنيات</span>
-                </a>
-            </div>
+```
+<!-- Hero Section -->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>برميل</h1>
+        <p class="subtitle">BERMEL</p>
+        <p class="tagline">تحدى نفسك... هل تستطيع الوصول للقمة؟</p>
+        
+        <div class="release-info">
+            <h3>🎮 متاحة الآن على Steam</h3>
+            <p class="release-date">متاحة للتحميل الآن!</p>
+            <p style="font-size: 1.8rem; font-weight: 700; color: #d4a574; margin-top: 1rem;">🔥 سعر مخفض: 5 ريال فقط!</p>
         </div>
-    </section>
 
-    <!-- Game Info -->
-    <section class="game-info" id="about">
-        <h2 class="section-title">عن اللعبة</h2>
-        <div class="info-grid">
-            <div class="info-card">
-                <h3>🎮 طريقة اللعب</h3>
-                <p>تحكم بالبرميل باستخدام الماوس. حدد اتجاه الاندفاع بالمؤشر، واضغط باستمرار على الزر الأيسر لشحن القوة. عند الإفلات، ينطلق البرميل حسب قوة الشحن!</p>
-            </div>
-            <div class="info-card">
-                <h3>⚡ التحدي</h3>
-                <p>لعبة صعبة للغاية مستوحاة من Getting Over It. تسلق للأعلى عبر عقبات ومنحدرات تتطلب مهارة ودقة عالية. خطأ واحد قد يعيدك للبداية!</p>
-            </div>
-            <div class="info-card">
-                <h3>🏆 الهدف</h3>
-                <p>تحدى نفسك للوصول إلى أعلى نقطة وإكمال اللعبة. هل أنت مستعد لمواجهة الإحباط والإصرار على النجاح؟</p>
-            </div>
+        <div class="button-group">
+            <a href="https://store.steampowered.com/app/4134800/Bermel/" target="_blank" class="steam-btn">
+                <span>🎮</span>
+                <span>حمّل الآن من Steam</span>
+            </a>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Gallery -->
-    <section class="gallery" id="gallery">
-        <h2 class="section-title">لقطات من اللعبة</h2>
-        <div class="gallery-grid">
-            <div class="gallery-item">
-                <img src="1.png" alt="لقطة من اللعبة 1">
-            </div>
-            <div class="gallery-item">
-                <img src="2.png" alt="لقطة من اللعبة 2">
-            </div>
-            <div class="gallery-item">
-                <img src="3.png" alt="لقطة من اللعبة 3">
-            </div>
-            <div class="gallery-item">
-                <img src="4.png" alt="لقطة من اللعبة 4">
-            </div>
-            <div class="gallery-item">
-                <img src="5.png" alt="لقطة من اللعبة 5">
-            </div>
-            <div class="gallery-item">
-                <img src="6.png" alt="لقطة من اللعبة 6">
-            </div>
+<!-- Game Info -->
+<section class="game-info" id="about">
+    <h2 class="section-title">عن اللعبة</h2>
+    <div class="info-grid">
+        <div class="info-card">
+            <h3>🎮 طريقة اللعب</h3>
+            <p>تحكم بالبرميل باستخدام الماوس. حدد اتجاه الاندفاع بالمؤشر، واضغط باستمرار على الزر الأيسر لشحن القوة. عند الإفلات، ينطلق البرميل حسب قوة الشحن!</p>
         </div>
-    </section>
-
-    <!-- Download Section -->
-    <section class="game-info" id="download">
-        <h2 class="section-title">جاهز للتحدي؟</h2>
-        <div style="text-align: center;">
-            <div class="release-info" style="max-width: 700px;">
-                <h3>📅 الإصدار الرسمي</h3>
-                <p class="release-date">29 - 11 - 2025</p>
-                <p style="margin-top: 1.5rem;">متوفر حصرياً على Steam</p>
-            </div>
-
-            <div class="button-group" style="margin-top: 3rem;">
-                <a href="https://store.steampowered.com/app/4134800/Bermel/" target="_blank" class="steam-btn">
-                    <span>❤️</span>
-                    <span>أضف إلى قائمة الأمنيات</span>
-                </a>
-            </div>
-
-            <p style="color: #7fb3d5; margin-top: 3rem; font-size: 1rem;">
-                💻 متوافقة مع Windows 10/11
-            </p>
+        <div class="info-card">
+            <h3>⚡ التحدي</h3>
+            <p>لعبة صعبة للغاية مستوحاة من Getting Over It. تسلق للأعلى عبر عقبات ومنحدرات تتطلب مهارة ودقة عالية. خطأ واحد قد يعيدك للبداية!</p>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-logo">FaredON Games</div>
-            <p style="font-size: 1.1rem; color: #b8d4e3;">جميع الحقوق محفوظة © 2025 FaredON Games</p>
-            <p>تطوير: FaredON | الموقع: FAREEDON</p>
-            <p style="margin-top: 1.5rem;">🎮 Steam Release: 11 نوفمبر 2025</p>
+        <div class="info-card">
+            <h3>🏆 الهدف</h3>
+            <p>تحدى نفسك للوصول إلى أعلى نقطة وإكمال اللعبة. هل أنت مستعد لمواجهة الإحباط والإصرار على النجاح؟</p>
         </div>
-    </footer>
+    </div>
+</section>
+
+<!-- Gallery -->
+<section class="gallery" id="gallery">
+    <h2 class="section-title">لقطات من اللعبة</h2>
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <img src="1.png" alt="لقطة من اللعبة 1">
+        </div>
+        <div class="gallery-item">
+            <img src="2.png" alt="لقطة من اللعبة 2">
+        </div>
+        <div class="gallery-item">
+            <img src="3.png" alt="لقطة من اللعبة 3">
+        </div>
+        <div class="gallery-item">
+            <img src="4.png" alt="لقطة من اللعبة 4">
+        </div>
+        <div class="gallery-item">
+            <img src="5.png" alt="لقطة من اللعبة 5">
+        </div>
+        <div class="gallery-item">
+            <img src="6.png" alt="لقطة من اللعبة 6">
+        </div>
+    </div>
+</section>
+
+<!-- Download Section -->
+<section class="game-info" id="download">
+    <h2 class="section-title">جاهز للتحدي؟</h2>
+    <div style="text-align: center;">
+        <div class="release-info" style="max-width: 700px;">
+            <h3>🎉 اللعبة متاحة الآن!</h3>
+            <p class="release-date">حمّل الآن بسعر مخفض</p>
+            <p style="font-size: 2.2rem; font-weight: 700; background: linear-gradient(135deg, #3498db 0%, #d4a574 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-top: 1rem;">5 ريال فقط 🔥</p>
+            <p style="margin-top: 1.5rem;">متوفر حصرياً على Steam</p>
+        </div>
+
+        <div class="button-group" style="margin-top: 3rem;">
+            <a href="https://store.steampowered.com/app/4134800/Bermel/" target="_blank" class="steam-btn">
+                <span>🎮</span>
+                <span>حمّل الآن من Steam</span>
+            </a>
+        </div>
+
+        <p style="color: #7fb3d5; margin-top: 3rem; font-size: 1rem;">
+            💻 متوافقة مع Windows 10/11
+        </p>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-logo">FaredON Games</div>
+        <p style="font-size: 1.1rem; color: #b8d4e3;">جميع الحقوق محفوظة © 2025 FaredON Games</p>
+        <p>تطوير: FaredON | الموقع: FAREEDON</p>
+        <p style="margin-top: 1.5rem;">🎮 متاحة الآن على Steam بسعر مخفض!</p>
+    </div>
+</footer>
+```
+
 </body>
 </html>
